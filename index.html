@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Strona Testowa | Stellerek.me</title>
-    <meta name="description" content="Strona testowa z interaktywnymi elementami">
+    <title>Stellerek.me | Nowoczesna Strona</title>
+    <meta name="description" content="Minimalistyczna, nowoczesna strona hostowana na GitHub Pages">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -16,92 +16,85 @@
                 <div class="logo">stellerek<span style="color: var(--primary-color)">.me</span></div>
                 <ul class="nav-links">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="index.html#features">Możliwości</a></li>
-                    <li><a href="index.html#about">O mnie</a></li>
-                    <li><a href="test.html" class="active">Test</a></li>
+                    <li><a href="#features">Możliwości</a></li>
+                    <li><a href="#about">O mnie</a></li>
+                    <li><a href="test.html">Test</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <section class="hero fadeIn" style="min-height: 40vh;">
+    <section class="hero fadeIn">
         <div class="container">
-            <div class="hero-text" style="text-align: center;">
-                <h1>Strona Testowa</h1>
-                <p class="subtitle">Interaktywne elementy i funkcje demonstracyjne</p>
+            <div class="hero-text">
+                <h1>Minimalistyczny design.<br>Maksymalne wrażenia.</h1>
+                <p class="subtitle">Nowoczesna strona stworzona z myślą o czystości i elegancji. Przedstawiam prosty, ale efektywny sposób na prezentację treści online.</p>
+                <a href="#features" class="btn">Odkryj możliwości</a>
+                <a href="test.html" class="btn btn-outline" style="margin-left: 1rem;">Strona testowa</a>
             </div>
         </div>
     </section>
 
-    <section>
+    <section id="features">
         <div class="container">
             <div class="section-title">
-                <h2>Interaktywne funkcje</h2>
-                <p>Wypróbuj różne elementy strony</p>
+                <h2>Nowoczesne rozwiązania</h2>
+                <p>Minimalistyczny design z maksimum funkcjonalności</p>
             </div>
-            
+            <div class="features">
+                <div class="feature">
+                    <div class="feature-icon"><i class="fas fa-paint-brush"></i></div>
+                    <h3>Elegancki Design</h3>
+                    <p>Nowoczesny, minimalistyczny wygląd z dbałością o detale i użyteczność.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon"><i class="fas fa-mobile-alt"></i></div>
+                    <h3>Responsywność</h3>
+                    <p>Doskonale wygląda na wszystkich urządzeniach, od smartfonów po duże monitory.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon"><i class="fas fa-bolt"></i></div>
+                    <h3>Wydajność</h3>
+                    <p>Szybkie ładowanie i płynne działanie dla najlepszego doświadczenia użytkownika.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" style="background-color: var(--light-color);">
+        <div class="container">
+            <div class="section-title">
+                <h2>O projekcie</h2>
+                <p>Kilka słów o tym projekcie</p>
+            </div>
             <div class="cards">
                 <div class="card">
                     <div class="card-content">
-                        <h3>Aktualny czas</h3>
-                        <div class="time-display" id="current-time">Ładowanie czasu...</div>
-                        <p>Czas jest aktualizowany co sekundę dzięki JavaScript</p>
+                        <h3>GitHub Pages</h3>
+                        <p>Ta strona jest hostowana na GitHub Pages, co pozwala na łatwe wdrażanie zmian bezpośrednio z repozytorium GitHub.</p>
+                        <p>Wszystkie aktualizacje i modyfikacje kodu są śledzone w systemie kontroli wersji.</p>
                     </div>
                 </div>
-                
                 <div class="card">
                     <div class="card-content">
-                        <h3>Animacje</h3>
-                        <div style="text-align: center; margin: 1.5rem 0;">
-                            <button id="animate-button" class="btn">Pokaż animację</button>
-                        </div>
-                        <div id="animation-box" style="height: 100px; background-color: var(--primary-color); border-radius: var(--border-radius); transition: all 0.5s ease;"></div>
+                        <h3>Własna domena</h3>
+                        <p>Dzięki konfiguracji CNAME, strona jest dostępna pod własną domeną stellerek.me zamiast domyślnego adresu GitHub Pages.</p>
+                        <p>To profesjonalne rozwiązanie dla każdego projektu online.</p>
                     </div>
                 </div>
-                
                 <div class="card">
                     <div class="card-content">
-                        <h3>Zmień tło</h3>
-                        <p>Kliknij przycisk, aby zmienić kolor tła strony</p>
-                        <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
-                            <button class="btn" style="margin-bottom: 0.5rem;" onclick="changeBackground('#f8f9fa')">Domyślny</button>
-                            <button class="btn" style="background-color: #ffe5ec; color: #333; margin-bottom: 0.5rem;" onclick="changeBackground('#ffe5ec')">Pastelowy</button>
-                            <button class="btn" style="background-color: #effffd; color: #333; margin-bottom: 0.5rem;" onclick="changeBackground('#effffd')">Mint</button>
-                            <button class="btn" style="background-color: #22333b; margin-bottom: 0.5rem;" onclick="changeBackground('#22333b')">Ciemny</button>
-                        </div>
+                        <h3>Nowoczesne technologie</h3>
+                        <p>Strona wykorzystuje najnowsze standardy HTML5 i CSS3 oraz moduły JavaScript dla interaktywności.</p>
+                        <p>Zastosowano zmienne CSS dla łatwej personalizacji kolorów i stylów.</p>
                     </div>
                 </div>
-            </div>
-            
-            <div class="card" style="margin-top: 2rem;">
-                <div class="card-content">
-                    <h3>Interaktywny formularz</h3>
-                    <p>Przykładowy formularz z walidacją</p>
-                    <form id="demo-form" onsubmit="return false;">
-                        <div style="margin-bottom: 1rem;">
-                            <label for="name" style="display: block; margin-bottom: 0.5rem;">Imię:</label>
-                            <input type="text" id="name" style="width: 100%; padding: 0.75rem; border-radius: var(--border-radius); border: 1px solid #ddd;">
-                        </div>
-                        <div style="margin-bottom: 1rem;">
-                            <label for="email" style="display: block; margin-bottom: 0.5rem;">Email:</label>
-                            <input type="email" id="email" style="width: 100%; padding: 0.75rem; border-radius: var(--border-radius); border: 1px solid #ddd;">
-                        </div>
-                        <div style="margin-bottom: 1rem;">
-                            <label for="message" style="display: block; margin-bottom: 0.5rem;">Wiadomość:</label>
-                            <textarea id="message" rows="4" style="width: 100%; padding: 0.75rem; border-radius: var(--border-radius); border: 1px solid #ddd;"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-success" id="submit-form">Wyślij</button>
-                        <div id="form-response" style="margin-top: 1rem; padding: 1rem; border-radius: var(--border-radius); display: none;"></div>
-                    </form>
-                </div>
-            </div>
-            
-            <div style="text-align: center; margin-top: 3rem;">
-                <a href="index.html" class="btn">Wróć do strony głównej</a>
             </div>
         </div>
     </section>
     
+    <div class="time-display" id="current-time">Ładowanie czasu...</div>
+
     <footer>
         <div class="container">
             <p>&copy; 2025 stellerek.me | Wszystkie prawa zastrzeżone</p>
@@ -113,7 +106,7 @@
             <p>Stworzone przez <strong>Felipebripir1</strong></p>
         </div>
     </footer>
-    
+
     <div class="theme-switcher">
         <div class="color-option" style="background-color: #3a86ff;" onclick="changeTheme('#3a86ff', '#8338ec')"></div>
         <div class="color-option" style="background-color: #f72585;" onclick="changeTheme('#f72585', '#7209b7')"></div>
@@ -134,47 +127,6 @@
             document.documentElement.style.setProperty('--primary-color', primary);
             document.documentElement.style.setProperty('--secondary-color', secondary);
         }
-        
-        // Zmiana tła strony
-        function changeBackground(color) {
-            document.documentElement.style.setProperty('--background-color', color);
-            // Dostosuj kolor tekstu dla ciemnych teł
-            if (color === '#22333b') {
-                document.documentElement.style.setProperty('--text-color', '#f8f9fa');
-            } else {
-                document.documentElement.style.setProperty('--text-color', '#333333');
-            }
-        }
-        
-        // Obsługa animacji
-        document.getElementById('animate-button').addEventListener('click', function() {
-            const box = document.getElementById('animation-box');
-            box.style.transform = box.style.transform === 'scale(1.2) rotate(45deg)' ? 'scale(1) rotate(0)' : 'scale(1.2) rotate(45deg)';
-            box.style.backgroundColor = box.style.backgroundColor === 'var(--accent-color)' ? 'var(--primary-color)' : 'var(--accent-color)';
-            box.style.borderRadius = box.style.borderRadius === '50%' ? 'var(--border-radius)' : '50%';
-        });
-        
-        // Obsługa formularza
-        document.getElementById('submit-form').addEventListener('click', function() {
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const message = document.getElementById('message').value;
-            const response = document.getElementById('form-response');
-            
-            response.style.display = 'block';
-            
-            if (!name || !email || !message) {
-                response.textContent = 'Proszę wypełnić wszystkie pola formularza.';
-                response.style.backgroundColor = '#ffcccb';
-            } else if (!email.includes('@')) {
-                response.textContent = 'Proszę podać prawidłowy adres email.';
-                response.style.backgroundColor = '#ffcccb';
-            } else {
-                response.textContent = 'Dziękujemy za wiadomość! (To tylko demonstracja, wiadomość nie została wysłana)';
-                response.style.backgroundColor = '#d4edda';
-                document.getElementById('demo-form').reset();
-            }
-        });
     </script>
 </body>
 </html>
