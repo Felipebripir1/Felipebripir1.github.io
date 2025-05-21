@@ -1,1 +1,106 @@
-elo
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strona Testowa - Stellerek.me</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+        .test-box {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .time-display {
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            margin: 20px 0;
+        }
+        footer {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .button {
+            display: inline-block;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .button:hover {
+            background-color: #66BB6A;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Strona Testowa</h1>
+        <p>Podstrona serwisu stellerek.me</p>
+    </header>
+
+    <div class="container">
+        <div class="test-box">
+            <h2>To jest strona testowa</h2>
+            <p>Jeśli widzisz tę stronę, to znaczy że poprawnie skonfigurowałeś GitHub Pages!</p>
+            <div class="time-display" id="current-time">Ładowanie czasu...</div>
+        </div>
+
+        <div class="test-box">
+            <h2>Interaktywny element</h2>
+            <p>Kliknij przycisk, aby zmienić kolor tła:</p>
+            <button id="color-change" class="button">Zmień kolor</button>
+        </div>
+
+        <a href="index.html" class="button">Wróć do strony głównej</a>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 stellerek.me - Test GitHub Pages</p>
+    </footer>
+
+    <script>
+        // Wyświetl aktualny czas
+        function updateTime() {
+            const now = new Date();
+            document.getElementById('current-time').textContent = now.toLocaleString();
+        }
+        updateTime();
+        setInterval(updateTime, 1000);
+
+        // Zmiana koloru tła
+        document.getElementById('color-change').addEventListener('click', function() {
+            const colors = ['#f4f4f4', '#ffe6e6', '#e6ffe6', '#e6e6ff', '#fff9e6'];
+            const randomColor = colors[Math.floor(Math.random() * colors.length)];
+            document.body.style.backgroundColor = randomColor;
+        });
+    </script>
+</body>
+</html>
